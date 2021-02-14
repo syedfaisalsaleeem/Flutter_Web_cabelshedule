@@ -23,12 +23,10 @@ class showTable extends StatelessWidget {
     return Colors.white;  // Use the default value.
   }) ,
 columnSpacing: 25,
-        // columnSpacing: 0,
         showBottomBorder: true,
         decoration: BoxDecoration(
           border: Border.all(color: Colors.blueGrey,)
         ),
-        // decoration: TableBorder(bottom: ),
         columns: [
           DataColumn(label: Text("Data Field",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600),)
           ),

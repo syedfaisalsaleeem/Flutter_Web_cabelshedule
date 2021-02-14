@@ -8,16 +8,12 @@ class TableOptionD extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // padding:EdgeInsets.fromLTRB(10, 10, 10, 0),
       height:70,
       alignment: Alignment.center,
-      // color:Colors.grey,
       child:Container(
         height: 60,
-        // color: Colors.indigo,
         margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
         child: Row(
-          // mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("Search:",style:TextStyle(fontSize: 12)),
@@ -26,7 +22,6 @@ class TableOptionD extends StatelessWidget {
               margin: EdgeInsets.only(top:10),
               width:90,
               height: 40,
-              // width:250,
               padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
               child:TextField(
                 keyboardType: TextInputType.text,

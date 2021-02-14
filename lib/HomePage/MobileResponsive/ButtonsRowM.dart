@@ -12,12 +12,9 @@ class ButtonsRowM extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Container(
-      // color: Colors.green,
       child:Row(
         children: [
           Expanded(child: Container(
-            // color: Colors.blueGrey,
-            
             child:Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

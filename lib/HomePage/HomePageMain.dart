@@ -62,7 +62,7 @@ class _HomePageMainState extends State<HomePageMain> {
     drawer:Drawer(
 
             child: ListView(
-    // Important: Remove any padding from the ListView.
+
     padding: EdgeInsets.zero,
     children: <Widget>[
         ListTile(
@@ -250,18 +250,7 @@ class _HomePageMainState extends State<HomePageMain> {
         ),
                           ),
                         ),
-            //             FlutterWebScroller(
-            //   //Pass a reference to the ScrollCallBack function into the scrollbar
-            //   scrollCallBack,
 
-            //   //Add optional values
-            //   scrollBarBackgroundColor: Colors.white,
-            //   scrollBarWidth: 20.0,
-            //   dragHandleColor: Colors.red,
-            //   dragHandleBorderRadius: 2.0,
-            //   dragHandleHeight: 100.0,
-            //   dragHandleWidth: 15.0,
-            // )
               ],
 
             ),

@@ -286,16 +286,9 @@ class _CategoryState extends State<Category> {
               child:TextField(
                 maxLines:maxLines,
                 onChanged: (val){
-                  // setState(() {
-                  //   summary=val;
-                  // });
-                  //
                 },
-                // maxLines: null,
-                // expands: true,
                 style:TextStyle(
                   fontSize: 14,
-                  // fontWeight: FontWeight.w00,
                 ),
                 keyboardType: TextInputType.multiline,
                 decoration: InputDecoration(

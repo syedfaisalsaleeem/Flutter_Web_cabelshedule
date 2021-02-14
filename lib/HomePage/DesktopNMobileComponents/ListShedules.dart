@@ -38,7 +38,6 @@ class _ListShedulesState extends State<ListShedules> {
             Container(
               margin: EdgeInsets.fromLTRB(0,9.36,0,0),
               width:100,
-              // color: Colors.red,
               alignment:Alignment.topLeft ,
               child:Container(
                 padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
