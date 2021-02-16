@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class StatusMessageContainer extends StatelessWidget {
   int maxLines = 6;
@@ -12,9 +13,17 @@ class StatusMessageContainer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           SizedBox(height:20),
-          Container(width: 130,child: RaisedButton(onPressed: (){}, child:Text("Clear"))),
+          Container(width: 130,child:ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: (){}, child:Text("Clear"))),
           SizedBox(height:10),
-          Container(width: 130,child: RaisedButton(onPressed: (){}, child:Text("Email to admin"))),
+          Container(width: 130,child: ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: (){}, child:Text("Email to admin"))),
           SizedBox(height:20),
         ],),
         SizedBox(width:20),
@@ -25,7 +34,9 @@ class StatusMessageContainer extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(0,10,10,10),
                 child:TextField(
                   maxLines:maxLines,
+                  enabled: false,
                   onChanged: (val){
+                    
                   },
 
                   style:TextStyle(

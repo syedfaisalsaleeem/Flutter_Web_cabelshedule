@@ -12,45 +12,18 @@ class showTable extends StatelessWidget {
     return Container(
       width: size.width*1,
       height: 430,
-      child:DataTable(
-        headingRowHeight: 40,
-        sortAscending: true,
-        sortColumnIndex: 2,
-        dividerThickness: 1.2,
-        dataRowColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
-    if (states.contains(MaterialState.selected))
-      return Colors.white;
-    return Colors.white;  // Use the default value.
-  }) ,
-columnSpacing: 25,
-        showBottomBorder: true,
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.blueGrey,)
-        ),
-        columns: [
-          DataColumn(label: Text("Data Field",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600),)
-          ),
-                    DataColumn(label: Text("Header Text",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600))
-          ),
-                    DataColumn(label: Text("ColWidth",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600))
-          ),
-                    DataColumn(label: Text("Fieldorder",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600))
-          ),
-                    DataColumn(label: Text("Visible",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600))
-          ),
-        ],
-        rows:(tempList).map(
-          (item)=>
-            DataRow(cells: [
-              DataCell(Text(item["dataField"].toString())),
-              DataCell(Text(item["headerText"].toString())),
-              DataCell(Text(item["colWidth"].toString())),
-              DataCell(Text(item["fieldOrder"].toString())),
-              DataCell(Text(item["visible"].toString())),
-            ])
-          
-        ).toList() ,
-      )
+      child:Table(
+        border: TableBorder.all(),
+        defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        defaultColumnWidth:FixedColumnWidth(tempList[0]["colWidth"]) ,
+ 
+        children: [
+          TableRow(children:(tempList).map(
+            (item)=>Container(alignment: Alignment.center,width:item["colWidth"],child: Text(item["headerText"].toString()))
+          ).toList()
+          )
+      ],)
+
     );
   }
 }

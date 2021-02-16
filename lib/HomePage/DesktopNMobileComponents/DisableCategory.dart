@@ -118,7 +118,7 @@ class _DisableCategoryState extends State<DisableCategory> {
                           ),
                           onChanged: (String newValue) {
                             setState(() {
-                              dropdownValue1 = newValue;
+                              dropdownValue2 = newValue;
                             });
                           },
                           items: <String>['DAY', 'Kusile Construction', 'OPG', 'CLS', 'IOC', 'FOK']
@@ -211,7 +211,7 @@ class _DisableCategoryState extends State<DisableCategory> {
                         ),
                         onChanged: (String newValue) {
                           setState(() {
-                            dropdownValue1 = newValue;
+                            dropdownValue3 = newValue;
                           });
                         },
                         items: <String>['DAY', 'UNIT 4 C&I', 'OPG', 'CLS', 'IOC', 'FOK']

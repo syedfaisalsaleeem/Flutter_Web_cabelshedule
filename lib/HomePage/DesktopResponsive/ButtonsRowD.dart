@@ -19,20 +19,46 @@ class ButtonsRowD extends StatelessWidget {
             child:Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-              RaisedButton(onPressed: ()=>{
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                primary: currentindex==0?HexColor("#2B31C9"):HexColor("#EAEBEF"), // background
+                onPrimary: currentindex==0?Colors.white:Colors.black, // foreground
+              ),
+                onPressed: ()=>{
                listb()
 
-              }, child: Text("List",style: TextStyle(fontSize: 14,color:currentindex==0?Colors.white:Colors.black),),color:currentindex==0?HexColor("#2B31C9"):HexColor("#EAEBEF")),
+              }, child: Text("List",style: TextStyle(fontSize: 14,color:currentindex==0?Colors.white:Colors.black),)),
               SizedBox(width:5),
-              RaisedButton(onPressed: ()=>{ add()}, child: Text("Add",style: TextStyle(fontSize: 14,color:currentindex==1?Colors.white:Colors.black)),color:currentindex==1?HexColor("#2B31C9"):HexColor("#EAEBEF"),),
+              ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                primary: currentindex==1?HexColor("#2B31C9"):HexColor("#EAEBEF"), // background
+                onPrimary: currentindex==1?Colors.white:Colors.black, // foreground
+              ),
+                onPressed: ()=>{ add()}, child: Text("Add",style: TextStyle(fontSize: 14,color:currentindex==1?Colors.white:Colors.black))),
               SizedBox(width:5),
-              RaisedButton(onPressed: ()=>{update()}, child: Text("Update",style: TextStyle(fontSize: 14,color:currentindex==2?Colors.white:Colors.black)),color:currentindex==2?HexColor("#2B31C9"):HexColor("#EAEBEF")),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                primary: currentindex==2?HexColor("#2B31C9"):HexColor("#EAEBEF"), // background
+                onPrimary: currentindex==2?Colors.white:Colors.black, // foreground
+              ),onPressed: ()=>{update()}, child: Text("Update",style: TextStyle(fontSize: 14,color:currentindex==2?Colors.white:Colors.black))),
               SizedBox(width:5),
-              RaisedButton(onPressed: ()=>{deactivate()}, child: Text("Deactivate",style: TextStyle(fontSize: 14,color:currentindex==3?Colors.white:Colors.black)),color:currentindex==3?HexColor("#2B31C9"):HexColor("#EAEBEF")),
+              ElevatedButton(                  
+                style: ElevatedButton.styleFrom(
+                primary: currentindex==3?HexColor("#2B31C9"):HexColor("#EAEBEF"), // background
+                onPrimary: currentindex==3?Colors.white:Colors.black, // foreground
+              ),onPressed: ()=>{deactivate()}, child: Text("Deactivate",style: TextStyle(fontSize: 14,color:currentindex==3?Colors.white:Colors.black))),
               SizedBox(width:5),
-              RaisedButton(onPressed: ()=>{reactivate()}, child: Text("Reactivate",style: TextStyle(fontSize: 14,color:currentindex==4?Colors.white:Colors.black)),color:currentindex==4?HexColor("#2B31C9"):HexColor("#EAEBEF")),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                primary: currentindex==4?HexColor("#2B31C9"):HexColor("#EAEBEF"), // background
+                onPrimary: currentindex==4?Colors.white:Colors.black, // foreground
+              ),onPressed: ()=>{reactivate()}, child: Text("Reactivate",style: TextStyle(fontSize: 14,color:currentindex==4?Colors.white:Colors.black))),
               SizedBox(width:5),
-              RaisedButton(onPressed: ()=>{permanentlydelete()}, child: Text("Permanently Delete",style: TextStyle(fontSize: 14,color:currentindex==5?Colors.white:Colors.black)),color:currentindex==5?HexColor("#2B31C9"):HexColor("#EAEBEF")),
+              ElevatedButton(                  
+                style: ElevatedButton.styleFrom(
+                primary: currentindex==5?HexColor("#2B31C9"):HexColor("#EAEBEF"), // background
+                onPrimary: currentindex==5?Colors.white:Colors.black, // foreground
+              ),onPressed: ()=>{permanentlydelete()}, child: Text("Permanently Delete",style: TextStyle(fontSize: 14,color:currentindex==5?Colors.white:Colors.black))),
 
             ],)
           ),flex:15),

@@ -23,9 +23,17 @@ class _ListShedulesState extends State<ListShedules> {
           SizedBox(
             width:5
           ),
-          RaisedButton(onPressed: ()=>{},child:Text("Refresh")),
+           ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: ()=>{},child:Text("Refresh")),
           SizedBox(width:5),
-          RaisedButton(onPressed: ()=>{},child:Text("Filter")),
+           ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: ()=>{},child:Text("Filter")),
         ],),
         SizedBox(height:10),
         Row(

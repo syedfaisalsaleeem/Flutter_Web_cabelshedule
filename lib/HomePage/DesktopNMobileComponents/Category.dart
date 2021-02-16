@@ -103,7 +103,7 @@ class _CategoryState extends State<Category> {
                         ),
                         onChanged: (String newValue) {
                           setState(() {
-                            dropdownValue1 = newValue;
+                            dropdownValue2 = newValue;
                           });
                         },
                         items: <String>['DAY', 'Kusile Construction', 'OPG', 'CLS', 'IOC', 'FOK']
@@ -192,7 +192,7 @@ class _CategoryState extends State<Category> {
                         ),
                         onChanged: (String newValue) {
                           setState(() {
-                            dropdownValue1 = newValue;
+                            dropdownValue3 = newValue;
                           });
                         },
                         items: <String>['DAY', 'UNIT 4 C&I', 'OPG', 'CLS', 'IOC', 'FOK']
@@ -345,9 +345,18 @@ class _CategoryState extends State<Category> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RaisedButton(onPressed: (){},child:Text("Submit",style: TextStyle(color:Colors.white),),color: HexColor("#2B31C9"),),
+              ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),
+              onPressed: (){},child:Text("Submit",style: TextStyle(color:Colors.white),),),
               SizedBox(width: 10,),
-              RaisedButton(onPressed: (){},child:Text("Clear",style: TextStyle(color:Colors.white)),color: HexColor("#2B31C9")),
+                ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: (){},child:Text("Clear",style: TextStyle(color:Colors.white))),
           ],)
           ],)
         ),

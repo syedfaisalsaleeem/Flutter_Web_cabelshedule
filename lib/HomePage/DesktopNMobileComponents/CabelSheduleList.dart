@@ -17,7 +17,7 @@ class CabelSheduleList extends StatelessWidget {
             width: 170,
             alignment: Alignment.center,
             
-            child: Text("Cabel Shedule List",style:TextStyle(fontSize: 14,color:Colors.white,fontWeight: FontWeight.w500)),
+            child: Text("Cabel Schedule List",style:TextStyle(fontSize: 14,color:Colors.white,fontWeight: FontWeight.w500)),
           ),
           Expanded(flex:1,child: Container(
             height: 40,

@@ -10,9 +10,17 @@ class SubmitButton extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RaisedButton(onPressed: (){},child:Text("Submit",style: TextStyle(color: Colors.white),),color: HexColor("#2B31C9")),
+                ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: (){},child:Text("Submit",style: TextStyle(color: Colors.white),)),
               SizedBox(width: 10,),
-              RaisedButton(onPressed: (){},child:Text("Clear",style: TextStyle(color: Colors.white),),color: HexColor("#2B31C9")),
+               ElevatedButton(  
+                style: ElevatedButton.styleFrom(
+                primary: HexColor("#2B31C9"), // background
+                onPrimary: Colors.white, // foreground
+              ),onPressed: (){},child:Text("Clear",style: TextStyle(color: Colors.white),)),
           ],)
       ],)
     );

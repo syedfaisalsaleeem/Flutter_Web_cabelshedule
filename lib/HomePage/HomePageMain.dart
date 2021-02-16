@@ -143,7 +143,7 @@ class _HomePageMainState extends State<HomePageMain> {
                           height:50,
                           child: Row(
                             children: [
-                              FlatButton(color:HexColor("#2227BE"),onPressed: () => Scaffold.of(context).openDrawer(),child: Icon(Icons.menu,color: Colors.white,)),
+                              IconButton(color:HexColor("#2227BE"),onPressed: () => Scaffold.of(context).openDrawer(),icon: Icon(Icons.menu,color: Colors.white,)),
                               Expanded(child: Container(),flex:1),
                               Container(color:HexColor("F5053F"),child: IconButton(color:Colors.white,icon: Icon(Icons.power_settings_new),onPressed: (){},)),
                               SizedBox(width:30)
@@ -158,7 +158,7 @@ class _HomePageMainState extends State<HomePageMain> {
                           height:50,
                           child: Row(
                             children: [
-                              FlatButton(color:HexColor("#2227BE"),onPressed: () => Scaffold.of(context).openDrawer(),child: Icon(Icons.menu,color: Colors.white,)),
+                              IconButton(color:HexColor("#2227BE"),onPressed: () => Scaffold.of(context).openDrawer(),icon: Icon(Icons.menu,color: Colors.white,)),
                               Expanded(child: Container(),flex:1),
                               Container(color:HexColor("F5053F"),child: IconButton(color:Colors.white,icon: Icon(Icons.power_settings_new),onPressed: (){},)),
                               SizedBox(width:30)

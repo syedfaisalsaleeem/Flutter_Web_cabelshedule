@@ -10,7 +10,7 @@ class _TopBarMainState extends State<TopBarMain> {
   Widget build(BuildContext context) {
     return Container(
       color: HexColor("#2227BE"),
-      height: 70,
+      height: 90,
       child:Row(
         children: [
           Expanded(flex:7,
@@ -20,44 +20,68 @@ class _TopBarMainState extends State<TopBarMain> {
             color:HexColor("#2227BE"),
             child:Row(
               children: [
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Projects", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                  onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Projects", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Staff", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                    onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Staff", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Stock Control", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                    onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Stock Control", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Cable Drums", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                    onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Cable Drums", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Cable Process", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                  onTap: (){},
+                   child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Cable Process", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Site Administration", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                    onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Site Administration", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("CMS Administration", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                    onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("CMS Administration", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:1),
-                Container(
-                  padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
-                  child:Text("Help", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                InkWell(
+                  onTap: (){},
+                    child: Container(
+                    padding:EdgeInsets.fromLTRB(10, 2, 10, 2),
+                    child:Text("Help", style:TextStyle(fontSize: 14,color: Colors.white,fontWeight: FontWeight.normal,decoration: TextDecoration.none))
+                  ),
                 ),
                 Expanded(child: Container(),flex:6),
             ],)
